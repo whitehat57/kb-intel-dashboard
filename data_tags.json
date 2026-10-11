@@ -1,0 +1,262 @@
+[
+ {
+  "tag": "api-endpoint",
+  "category": "asset-type",
+  "description": "API endpoint"
+ },
+ {
+  "tag": "cloud-resource",
+  "category": "asset-type",
+  "description": "Cloud resource (AWS/Azure/GCP)"
+ },
+ {
+  "tag": "container",
+  "category": "asset-type",
+  "description": "Container/Docker"
+ },
+ {
+  "tag": "database",
+  "category": "asset-type",
+  "description": "Database instance"
+ },
+ {
+  "tag": "ip-range",
+  "category": "asset-type",
+  "description": "IP range/CIDR"
+ },
+ {
+  "tag": "subdomain",
+  "category": "asset-type",
+  "description": "Subdomain asset"
+ },
+ {
+  "tag": "web-app",
+  "category": "asset-type",
+  "description": "Web application"
+ },
+ {
+  "tag": "collection",
+  "category": "phase",
+  "description": "Collection"
+ },
+ {
+  "tag": "credential-access",
+  "category": "phase",
+  "description": "Credential Access"
+ },
+ {
+  "tag": "defense-evasion",
+  "category": "phase",
+  "description": "Defense Evasion"
+ },
+ {
+  "tag": "discovery",
+  "category": "phase",
+  "description": "Discovery"
+ },
+ {
+  "tag": "execution",
+  "category": "phase",
+  "description": "Execution"
+ },
+ {
+  "tag": "exfiltration",
+  "category": "phase",
+  "description": "Exfiltration"
+ },
+ {
+  "tag": "impact",
+  "category": "phase",
+  "description": "Impact"
+ },
+ {
+  "tag": "initial-access",
+  "category": "phase",
+  "description": "Initial Access"
+ },
+ {
+  "tag": "lateral-movement",
+  "category": "phase",
+  "description": "Lateral Movement"
+ },
+ {
+  "tag": "persistence",
+  "category": "phase",
+  "description": "Persistence"
+ },
+ {
+  "tag": "privilege-escalation-phase",
+  "category": "phase",
+  "description": "Privilege Escalation"
+ },
+ {
+  "tag": "reconnaissance",
+  "category": "phase",
+  "description": "Reconnaissance phase"
+ },
+ {
+  "tag": "resource-development",
+  "category": "phase",
+  "description": "Resource Development"
+ },
+ {
+  "tag": "aws",
+  "category": "platform",
+  "description": "Amazon Web Services"
+ },
+ {
+  "tag": "azure",
+  "category": "platform",
+  "description": "Microsoft Azure"
+ },
+ {
+  "tag": "docker",
+  "category": "platform",
+  "description": "Docker containers"
+ },
+ {
+  "tag": "gcp",
+  "category": "platform",
+  "description": "Google Cloud Platform"
+ },
+ {
+  "tag": "kubernetes",
+  "category": "platform",
+  "description": "Kubernetes clusters"
+ },
+ {
+  "tag": "linux",
+  "category": "platform",
+  "description": "Linux systems"
+ },
+ {
+  "tag": "windows",
+  "category": "platform",
+  "description": "Windows systems"
+ },
+ {
+  "tag": "critical",
+  "category": "severity",
+  "description": "Critical severity (CVSS 9.0-10.0)"
+ },
+ {
+  "tag": "high",
+  "category": "severity",
+  "description": "High severity (CVSS 7.0-8.9)"
+ },
+ {
+  "tag": "info",
+  "category": "severity",
+  "description": "Informational"
+ },
+ {
+  "tag": "low",
+  "category": "severity",
+  "description": "Low severity (CVSS 0.1-3.9)"
+ },
+ {
+  "tag": "medium",
+  "category": "severity",
+  "description": "Medium severity (CVSS 4.0-6.9)"
+ },
+ {
+  "tag": "amass",
+  "category": "tool",
+  "description": "Amass"
+ },
+ {
+  "tag": "burp",
+  "category": "tool",
+  "description": "Burp Suite"
+ },
+ {
+  "tag": "custom-script",
+  "category": "tool",
+  "description": "Custom Python/Go script"
+ },
+ {
+  "tag": "ffuf",
+  "category": "tool",
+  "description": "FFUF fuzzer"
+ },
+ {
+  "tag": "metasploit",
+  "category": "tool",
+  "description": "Metasploit Framework"
+ },
+ {
+  "tag": "nmap",
+  "category": "tool",
+  "description": "Nmap scanner"
+ },
+ {
+  "tag": "nuclei",
+  "category": "tool",
+  "description": "Nuclei scanner"
+ },
+ {
+  "tag": "sqlmap",
+  "category": "tool",
+  "description": "SQLMap"
+ },
+ {
+  "tag": "subfinder",
+  "category": "tool",
+  "description": "Subfinder"
+ },
+ {
+  "tag": "auth-bypass",
+  "category": "vuln-type",
+  "description": "Authentication Bypass"
+ },
+ {
+  "tag": "idor",
+  "category": "vuln-type",
+  "description": "Insecure Direct Object Reference"
+ },
+ {
+  "tag": "info-disclosure",
+  "category": "vuln-type",
+  "description": "Information Disclosure"
+ },
+ {
+  "tag": "lfi",
+  "category": "vuln-type",
+  "description": "Local File Inclusion"
+ },
+ {
+  "tag": "misconfiguration",
+  "category": "vuln-type",
+  "description": "Security Misconfiguration"
+ },
+ {
+  "tag": "privilege-escalation",
+  "category": "vuln-type",
+  "description": "Privilege Escalation"
+ },
+ {
+  "tag": "rce",
+  "category": "vuln-type",
+  "description": "Remote Code Execution"
+ },
+ {
+  "tag": "rfi",
+  "category": "vuln-type",
+  "description": "Remote File Inclusion"
+ },
+ {
+  "tag": "sql-injection",
+  "category": "vuln-type",
+  "description": "SQL Injection vulnerabilities"
+ },
+ {
+  "tag": "ssrf",
+  "category": "vuln-type",
+  "description": "Server-Side Request Forgery"
+ },
+ {
+  "tag": "xss",
+  "category": "vuln-type",
+  "description": "Cross-Site Scripting"
+ }
+]

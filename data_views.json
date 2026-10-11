@@ -1,0 +1,92 @@
+[
+ {
+  "id": 1,
+  "name": "recon-findings",
+  "agent_role": "reconnaissance-engine",
+  "query_sql": "SELECT * FROM documents WHERE source_worker='reconnaissance-engine' AND status='active' ORDER BY created_at DESC",
+  "description": "All active reconnaissance findings",
+  "parameters": "{}",
+  "created_at": "2026-10-10 05:36:24"
+ },
+ {
+  "id": 2,
+  "name": "critical-vulns",
+  "agent_role": "vulnerability-scanner",
+  "query_sql": "SELECT * FROM documents WHERE severity='critical' AND status='active' ORDER BY created_at DESC",
+  "description": "Critical severity vulnerabilities",
+  "parameters": "{}",
+  "created_at": "2026-10-10 05:36:24"
+ },
+ {
+  "id": 3,
+  "name": "high-vulns",
+  "agent_role": "vulnerability-scanner",
+  "query_sql": "SELECT * FROM documents WHERE severity='high' AND status='active' ORDER BY created_at DESC",
+  "description": "High severity vulnerabilities",
+  "parameters": "{}",
+  "created_at": "2026-10-10 05:36:24"
+ },
+ {
+  "id": 4,
+  "name": "exploitable-findings",
+  "agent_role": "exploit-payload-tester",
+  "query_sql": "SELECT d.* FROM documents d JOIN document_links dl ON d.uuid=dl.target_uuid WHERE dl.link_type='confirms' AND d.status='active'",
+  "description": "Findings confirmed as exploitable",
+  "parameters": "{}",
+  "created_at": "2026-10-10 05:36:24"
+ },
+ {
+  "id": 5,
+  "name": "code-audit-findings",
+  "agent_role": "code-config-auditor",
+  "query_sql": "SELECT * FROM documents WHERE source_worker='code-config-auditor' AND status='active' ORDER BY created_at DESC",
+  "description": "Code & config audit findings",
+  "parameters": "{}",
+  "created_at": "2026-10-10 05:36:24"
+ },
+ {
+  "id": 6,
+  "name": "cve-intel",
+  "agent_role": "threat-intelligence-synthesis",
+  "query_sql": "SELECT * FROM documents WHERE category='cve' OR category='intel' ORDER BY created_at DESC",
+  "description": "CVE intelligence & threat reports",
+  "parameters": "{}",
+  "created_at": "2026-10-10 05:36:24"
+ },
+ {
+  "id": 7,
+  "name": "poc-library",
+  "agent_role": "rd-researcher",
+  "query_sql": "SELECT * FROM documents WHERE category='poc' AND status='active' ORDER BY created_at DESC",
+  "description": "Proof of Concept library",
+  "parameters": "{}",
+  "created_at": "2026-10-10 05:36:24"
+ },
+ {
+  "id": 8,
+  "name": "active-playbooks",
+  "agent_role": "orchestrator",
+  "query_sql": "SELECT * FROM playbooks WHERE status='approved' ORDER BY category, name",
+  "description": "Approved operational playbooks",
+  "parameters": "{}",
+  "created_at": "2026-10-10 05:36:24"
+ },
+ {
+  "id": 9,
+  "name": "mitre-mapped",
+  "agent_role": "orchestrator",
+  "query_sql": "SELECT d.*, mt.technique_id, mt.tactic FROM documents d JOIN mitre_techniques mt ON d.uuid=mt.document_uuid WHERE d.status='active'",
+  "description": "All findings mapped to MITRE ATT&CK",
+  "parameters": "{}",
+  "created_at": "2026-10-10 05:36:24"
+ },
+ {
+  "id": 10,
+  "name": "by-target-domain",
+  "agent_role": "orchestrator",
+  "query_sql": "SELECT d.*, e.entity_value as domain FROM documents d JOIN entities e ON d.uuid=e.document_uuid WHERE e.entity_type='domain' AND e.entity_value LIKE ? AND d.status='active'",
+  "description": "Findings for a specific domain (param: domain pattern)",
+  "parameters": "{\"domain\": \"example.com\"}",
+  "created_at": "2026-10-10 05:36:24"
+ }
+]

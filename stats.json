@@ -1,0 +1,71 @@
+{
+  "generated_at": "2026-10-11T11:18:21.638880",
+  "total_documents": 621,
+  "total_entities": 917,
+  "israeli_count": 504,
+  "enriched_count": 2,
+  "with_website": 307,
+  "entity_types": {
+    "domain": 305,
+    "ip": 612
+  },
+  "cloud_distribution": {
+    "Cloudflare": 101,
+    "Unknown (nginx)": 20,
+    "Unknown (Apache)": 17,
+    "Google Cloud": 7,
+    "AWS": 3,
+    "Microsoft Azure": 1,
+    "OpenText infrastructure": 1
+  },
+  "server_distribution": {
+    "cloudflare": 101,
+    "nginx": 17,
+    "Apache": 15,
+    "Vercel": 13,
+    "openresty": 9,
+    "LiteSpeed": 6,
+    "Netlify": 6,
+    "istio-envoy": 4,
+    "DPS/2.0.0+sha-ed47954": 4,
+    "Google Frontend": 4,
+    "CloudFront": 4,
+    "AmazonS3": 3,
+    "gws": 3,
+    "envoy": 3,
+    "Pepyaka": 2
+  },
+  "js_frameworks": {
+    "jquery": 111,
+    "react": 74,
+    "webpack": 63,
+    "nextjs": 51,
+    "vite": 51,
+    "angular": 17,
+    "nuxt": 2,
+    "swiper": 1,
+    "magnific-popup": 1,
+    "lazysizes": 1,
+    "vue": 1,
+    "foundation-css": 1,
+    "boomerang-js": 1,
+    "svelte": 1
+  },
+  "cdn_distribution": {
+    "Hit from cloudfront": 15,
+    "Miss from cloudfront": 10,
+    "HIT": 9,
+    "MISS, HIT": 2,
+    "1.1 google": 2,
+    "a483aa68cb499b07-CGK": 1,
+    "a4845c647e4c9fa1-SIN": 1,
+    "cdn-cache; desc=HIT, edge; dur=1, ak_p; desc=\"1791638516919_389065883_4236697047_48_13756_13_19_-\";dur=1": 1,
+    "a48402038d39afeb-CGK": 1,
+    "a48772168e64ea89-CGK": 1,
+    "a483bb23fc473f89-SIN": 1,
+    "ingress;dur=40, upstream;dur=40, cdn-cache; desc=MISS, edge; dur=112, origin; dur=267": 1,
+    "a483e7a1f912dfc6-SIN": 1,
+    "rt;dur=0.010,eagleid;desc=213be1e417916438356702703e0e0c,brt;dur=9, akamai;dur=63;desc=cache-miss": 1,
+    "a4841be73a160955-HKG": 1
+  }
+}
