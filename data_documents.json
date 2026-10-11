@@ -516,24 +516,155 @@
   "source_worker": "reconnaissance-engine",
   "category": "recon",
   "title": "Aeronautics Defense Systems",
-  "content": "# Aeronautics Defense Systems\n\n**Category:** israeli\n**Website:** N/A\n**Domain:** N/A\n**Timestamp:** 2026-10-10T08:39:10.943044\n",
+  "content": "# Aeronautics (Aeronautics Ltd / Defense Systems)\n\n**Category:** israeli (Defense - UAS/Drone)\n**Website:** https://aeronautics-sys.com\n**Domain:** aeronautics-sys.com\n**Enriched by:** Reconnaissance Engine Agent (confidence 0.90)\n\n## Status\n- **Geo-blocked**: Cloudflare Error 1009 from Indonesia (export compliance suspected)\n- Verified via Wayback Machine snapshot 2026-10-01\n\n## Tech Stack\n- **Server/CDN:** Cloudflare (edge) + Bezeqint (origin, Israeli ISP)\n- **CMS:** WordPress (tyco-wp theme v7.0.6, models-hotspots plugin)\n- **JS:** React, Swiper, Lottie, GSAP, Bootstrap\n- **Analytics:** Google Tag Manager (GTM-5WJ448D), Cookiebot\n- **SSL:** GoDaddy wildcard *.aeronautics-sys.com (exp Jan 2027)\n- **Email:** Proofpoint Essentials (MX) + Microsoft 365 (MS=ms30961079) + Apple Business Manager verified\n\n## DNS\n- **A:** 104.18.4.33, 104.18.5.33 (Cloudflare)\n- **MX:** Proofpoint Essentials (pphosted.com)\n- **NS:** ns1-3.bezeqint.net (Bezeq International)\n- **TXT:** apple-domain-verification, MS=ms30961079 (M365 tenant)\n\n## High-Value OSINT\n- **Exposed subdomains (attack surface):** staging, vpn (192.117.170.203), ftp (192.117.170.197), mail (192.117.170.199), owa (192.117.170.198)\n- **No CAA record** - any CA can issue certs\n- **Products:** Orbiter 2/3/4/5 (UAS), Aerostar NG, Dominator, Octoper (loitering munitions), Ground Segment\n- **GitHub:** No official public presence (expected for defense contractor)\n- **Origin infrastructure on-prem** at Bezeq (Israeli ISP), not fully cloud-migrated\n\n## Sources\nLive HTTP probe, dnspython, Shodan InternetDB, Team Cymru ASN, crt.sh (306 certs), Wayback Machine, gh CLI\n",
   "tags": [
-   "israeli"
+   "israeli",
+   "defense",
+   "uas",
+   "drone",
+   "cdn:Cloudflare",
+   "cloud:Bezeq",
+   "cms:WordPress",
+   "fw:react",
+   "has-subdomains",
+   "enriched",
+   "geo-blocked",
+   "enterprise-email"
   ],
   "metadata": {
-   "name": "Aeronautics Defense Systems",
-   "website": null,
-   "domain": null,
-   "ips": [],
-   "asn": [],
-   "tech_stack": {},
-   "subdomain_count": 0,
-   "github_repo_count": 0
+   "website": "https://aeronautics-sys.com",
+   "domain": "aeronautics-sys.com",
+   "ips": [
+    "104.18.4.33",
+    "104.18.5.33",
+    "192.117.170.197",
+    "192.117.170.198",
+    "192.117.170.199",
+    "192.117.170.202",
+    "192.117.170.203"
+   ],
+   "asn": [
+    "AS13335 Cloudflare",
+    "AS12400 Bezeq International (IL)",
+    "Microsoft 365 (autodiscover)"
+   ],
+   "tech_stack": {
+    "server": "cloudflare",
+    "cdn": "Cloudflare",
+    "cloud_provider": "Cloudflare (edge) + Bezeqint (origin)",
+    "cms": "WordPress (tyco-wp theme v7.0.6)",
+    "js_frameworks": [
+     "react",
+     "swiper",
+     "lottie",
+     "gsap",
+     "bootstrap"
+    ],
+    "plugins": [
+     "models-hotspots",
+     "wattaw"
+    ],
+    "analytics": [
+     "Google Tag Manager GTM-5WJ448D",
+     "gtag",
+     "Cookiebot"
+    ],
+    "ssl_issuer": {
+     "organizationName": "GoDaddy.com, Inc.",
+     "commonName": "Go Daddy Secure Certificate Authority - G2"
+    },
+    "ssl_expiry": "Jan 26 2027",
+    "email": {
+     "mx": "Proofpoint Essentials",
+     "tenant": "Microsoft 365 (MS=ms30961079)",
+     "apple_verified": true
+    },
+    "security_headers": {
+     "note": "CF standard headers"
+    }
+   },
+   "dns_records": {
+    "A": [
+     "104.18.4.33",
+     "104.18.5.33"
+    ],
+    "MX": [
+     "mxa-0071d902.gslb.pphosted.com",
+     "mxb-0071d902.gslb.pphosted.com"
+    ],
+    "NS": [
+     "ns1.bezeqint.net",
+     "ns2.bezeqint.net",
+     "ns3.bezeqint.net"
+    ],
+    "TXT": [
+     "apple-domain-verification=DCZsEOk1OVFniyaA",
+     "MS=ms30961079",
+     "(beberapa token verifikasi pihak ketiga tidak teridentifikasi)"
+    ],
+    "CAA": "none"
+   },
+   "asn_info": [
+    {
+     "ip": "104.18.4.33",
+     "asn": "AS13335 Cloudflare",
+     "ports": "80/443/2052-2096/8080/8443/8880",
+     "tags": [
+      "cdn"
+     ]
+    },
+    {
+     "ip": "192.117.170.x",
+     "asn": "AS12400 Bezeq International (IL)",
+     "note": "origin infrastructure"
+    }
+   ],
+   "subdomain_count": 9,
+   "github_repo_count": 0,
+   "osint_findings": {
+    "geo_block": "Cloudflare Error 1009 - blocked from Indonesia region (export compliance/ITAR suspected)",
+    "email_stack": "Proofpoint Essentials + M365 tenant + Apple Business Manager = enterprise-grade corp setup",
+    "origin_hosting": "Bezeq International (Israeli ISP) - on-prem infrastructure not fully cloud-migrated",
+    "exposed_subdomains": {
+     "career.aeronautics-sys.com": "Career portal (CF)",
+     "portal.aeronautics-sys.com": "Portal (CF)",
+     "staging.aeronautics-sys.com": "STAGING env exposed in public DNS - potential weakness",
+     "mail.aeronautics-sys.com": "192.117.170.199 (origin)",
+     "vpn.aeronautics-sys.com": "192.117.170.203 - VPN endpoint public",
+     "owa.aeronautics-sys.com": "192.117.170.198 - Outlook Web Access",
+     "ftp.aeronautics-sys.com": "192.117.170.197 - FTP server public",
+     "autodiscover.aeronautics-sys.com": "Microsoft 365"
+    },
+    "products": [
+     "Orbiter 2/3/4/5 (UAS)",
+     "Aerostar NG",
+     "Dominator",
+     "Octoper (loitering munitions)",
+     "Ground Segment/Simulators"
+    ],
+    "github": "No official public GitHub presence (expected for defense contractor). Org 'Aeronautics' on GitHub is unrelated (stale 2012-2013 repos).",
+    "security_notes": "staging, vpn, ftp exposed in DNS = attack surface. No CAA record = any CA can issue certs."
+   },
+   "enrichment": {
+    "method": "agent_deep_enrichment",
+    "agent": "reconnaissance-engine",
+    "confidence": 0.9,
+    "date": "2026-10-11",
+    "sources": [
+     "Live HTTP probe",
+     "dnspython (A/MX/NS/TXT + 104 subdomain brute)",
+     "Shodan InternetDB",
+     "Team Cymru ASN",
+     "crt.sh (306 certs)",
+     "Wayback Machine (2026-10-01)",
+     "gh CLI GitHub API"
+    ]
+   }
   },
   "severity": null,
   "status": "active",
   "created_at": "2026-10-11T04:41:25.213748",
-  "updated_at": "2026-10-10 21:41:25"
+  "updated_at": "2026-10-11T04:47:12.907494"
  },
  {
   "uuid": "dca6a4ab-b141-46f0-b73f-770ec308d295",

@@ -8251,5 +8251,131 @@
   "context": null,
   "confidence": 1.0,
   "created_at": "2026-10-10 21:41:25"
+ },
+ {
+  "id": 918,
+  "document_uuid": "07cbf325-e77c-4c1d-b8d1-30b567f5a9e2",
+  "entity_type": "domain",
+  "entity_value": "career.aeronautics-sys.com",
+  "context": "subdomain",
+  "confidence": 1.0,
+  "created_at": "2026-10-11 04:47:12"
+ },
+ {
+  "id": 919,
+  "document_uuid": "07cbf325-e77c-4c1d-b8d1-30b567f5a9e2",
+  "entity_type": "domain",
+  "entity_value": "portal.aeronautics-sys.com",
+  "context": "subdomain",
+  "confidence": 1.0,
+  "created_at": "2026-10-11 04:47:12"
+ },
+ {
+  "id": 920,
+  "document_uuid": "07cbf325-e77c-4c1d-b8d1-30b567f5a9e2",
+  "entity_type": "domain",
+  "entity_value": "staging.aeronautics-sys.com",
+  "context": "subdomain",
+  "confidence": 1.0,
+  "created_at": "2026-10-11 04:47:12"
+ },
+ {
+  "id": 921,
+  "document_uuid": "07cbf325-e77c-4c1d-b8d1-30b567f5a9e2",
+  "entity_type": "domain",
+  "entity_value": "mail.aeronautics-sys.com",
+  "context": "subdomain",
+  "confidence": 1.0,
+  "created_at": "2026-10-11 04:47:12"
+ },
+ {
+  "id": 922,
+  "document_uuid": "07cbf325-e77c-4c1d-b8d1-30b567f5a9e2",
+  "entity_type": "domain",
+  "entity_value": "vpn.aeronautics-sys.com",
+  "context": "subdomain",
+  "confidence": 1.0,
+  "created_at": "2026-10-11 04:47:12"
+ },
+ {
+  "id": 923,
+  "document_uuid": "07cbf325-e77c-4c1d-b8d1-30b567f5a9e2",
+  "entity_type": "domain",
+  "entity_value": "owa.aeronautics-sys.com",
+  "context": "subdomain",
+  "confidence": 1.0,
+  "created_at": "2026-10-11 04:47:12"
+ },
+ {
+  "id": 924,
+  "document_uuid": "07cbf325-e77c-4c1d-b8d1-30b567f5a9e2",
+  "entity_type": "domain",
+  "entity_value": "ftp.aeronautics-sys.com",
+  "context": "subdomain",
+  "confidence": 1.0,
+  "created_at": "2026-10-11 04:47:12"
+ },
+ {
+  "id": 925,
+  "document_uuid": "07cbf325-e77c-4c1d-b8d1-30b567f5a9e2",
+  "entity_type": "domain",
+  "entity_value": "autodiscover.aeronautics-sys.com",
+  "context": "subdomain",
+  "confidence": 1.0,
+  "created_at": "2026-10-11 04:47:12"
+ },
+ {
+  "id": 926,
+  "document_uuid": "07cbf325-e77c-4c1d-b8d1-30b567f5a9e2",
+  "entity_type": "ip",
+  "entity_value": "104.18.4.33",
+  "context": "infrastructure",
+  "confidence": 1.0,
+  "created_at": "2026-10-11 04:47:12"
+ },
+ {
+  "id": 927,
+  "document_uuid": "07cbf325-e77c-4c1d-b8d1-30b567f5a9e2",
+  "entity_type": "ip",
+  "entity_value": "104.18.5.33",
+  "context": "infrastructure",
+  "confidence": 1.0,
+  "created_at": "2026-10-11 04:47:12"
+ },
+ {
+  "id": 928,
+  "document_uuid": "07cbf325-e77c-4c1d-b8d1-30b567f5a9e2",
+  "entity_type": "ip",
+  "entity_value": "192.117.170.197",
+  "context": "infrastructure",
+  "confidence": 1.0,
+  "created_at": "2026-10-11 04:47:12"
+ },
+ {
+  "id": 929,
+  "document_uuid": "07cbf325-e77c-4c1d-b8d1-30b567f5a9e2",
+  "entity_type": "ip",
+  "entity_value": "192.117.170.198",
+  "context": "infrastructure",
+  "confidence": 1.0,
+  "created_at": "2026-10-11 04:47:12"
+ },
+ {
+  "id": 930,
+  "document_uuid": "07cbf325-e77c-4c1d-b8d1-30b567f5a9e2",
+  "entity_type": "ip",
+  "entity_value": "192.117.170.199",
+  "context": "infrastructure",
+  "confidence": 1.0,
+  "created_at": "2026-10-11 04:47:12"
+ },
+ {
+  "id": 931,
+  "document_uuid": "07cbf325-e77c-4c1d-b8d1-30b567f5a9e2",
+  "entity_type": "ip",
+  "entity_value": "192.117.170.203",
+  "context": "infrastructure",
+  "confidence": 1.0,
+  "created_at": "2026-10-11 04:47:12"
  }
 ]
