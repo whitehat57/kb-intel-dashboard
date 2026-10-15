@@ -1,13 +1,14 @@
 {
-  "generated_at": "2026-10-15T08:14:53.786960",
-  "total_documents": 627,
-  "total_entities": 196217,
+  "generated_at": "2026-10-15T08:45:53.800571",
+  "total_documents": 628,
+  "total_entities": 197953,
   "israeli_count": 504,
-  "enriched_count": 3,
+  "enriched_count": 4,
   "with_website": 612,
   "entity_types": {
-    "domain": 109708,
-    "ip": 86509
+    "domain": 110679,
+    "ip": 87272,
+    "username": 2
   },
   "cloud_distribution": {
     "Cloudflare": 101,
@@ -25,7 +26,7 @@
     "Apache": 15,
     "Vercel": 13,
     "openresty": 9,
-    "LiteSpeed": 6,
+    "LiteSpeed": 7,
     "Netlify": 6,
     "istio-envoy": 4,
     "DPS/2.0.0+sha-ed47954": 4,
