@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-10-18T11:40:58.208483",
+  "generated_at": "2026-10-18T12:11:56.864024",
   "total_documents": 629,
-  "total_entities": 383286,
+  "total_entities": 384152,
   "israeli_count": 504,
   "enriched_count": 5,
   "with_website": 612,
   "entity_types": {
-    "domain": 214474,
-    "ip": 168806,
+    "domain": 214959,
+    "ip": 169187,
     "username": 2,
     "model": 2,
     "technology": 1,
