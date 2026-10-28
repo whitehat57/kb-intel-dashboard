@@ -1,18 +1,10 @@
 {
-  "generated_at": "2026-10-19T14:01:59.591421",
+  "generated_at": "2026-10-29T06:01:20.410003",
   "total_documents": 629,
-  "total_entities": 448236,
   "israeli_count": 504,
   "enriched_count": 5,
   "with_website": 612,
-  "entity_types": {
-    "domain": 250849,
-    "ip": 197381,
-    "username": 2,
-    "model": 2,
-    "technology": 1,
-    "tool": 1
-  },
+  "entity_types": {},
   "cloud_distribution": {
     "Cloudflare": 101,
     "Unknown (nginx)": 20,
